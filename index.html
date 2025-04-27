@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+    <title>Meu primeiro site</title>
+</head>
+<body>
+    <header>
+        <h1>Albertino Maria de Andrade Moreira</h1>
+        <p>Desenvolvedor front-end em formação</p>
+        <img src="assets/perfil2.jpg" alt="Foto de perfil" class="perfil">
+    </header>
+
+    <section class="sobre">
+        <h2>Sobre mim</h2>
+        <p>Sou apaixonado por tecnologia e estou em processo de transição para desenvolvemento fron-end. estou focado em aprender na prática, criando projetos mais reais enquando construo meu portfólio.</p>
+    </section>
+
+    <section class="contato">
+        <h2>Me encontre aqui:</h2>
+        <ul>
+            <li><a href="https://github.com/AlbertinoMoreira" target="_blank"><i class ="fab fa-github"></i>GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/albertino-moreira/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <section id="projetos">
+    <h2>Meus porjetos</h2>
+    <div class="projeto">
+        <h3>Projeto 1</h3>
+        <p>Descrição do projeto 1...</p>
+    </div>
+    <div class="projeto">
+        <h3>Projeto 2: portfólio pessoas</h3>
+        <p>Este próprio site, feito para apresentar meus projetos e trajetória como desenvolvedor</p>
+        
+    </div>  
+    </section>
+
+    <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">↑</button>
+    <script>
+        let topBtn = document.getElementById("topBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        };
+
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
